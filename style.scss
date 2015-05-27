@@ -1,4 +1,4 @@
-/*
+/*!
 Theme Name: Rick Butterfield
 Theme URI: http://rickbutterfield.com
 */
@@ -105,6 +105,10 @@ h1, h2, h3, h4, h5, h6,
   margin-bottom: 2rem;
 }
 
+.no-margin-bottom {
+  margin-bottom: 0;
+}
+
 img
 {
   max-width: 100%;
@@ -121,13 +125,16 @@ hr
 
 .btn
 {
-  @extend .zeta;
+  font-size: 1rem;
   display: inline-block;
+  vertical-align: middle;
   border-radius: 0.5rem;
   color: white;
   font-weight: 500;
   padding: 0.5rem 1.5rem;
   background: $hero;
+  border: none;
+  border-radius: 0.25rem;
   @include single-transition(background, 0.2s, ease-in-out);
   
   &:hover,
@@ -136,6 +143,15 @@ hr
     color: white;
     background: $sidekick;
   }
+}
+
+.btn-small {
+  padding: 0.125rem 0.375rem;
+  font-size: 0.875rem;
+}
+
+.btn-true {
+  background-color: #2ecc71;
 }
 
 ::selection,
@@ -256,6 +272,22 @@ h6, .zeta
   font-size: 1rem;
 }
 
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  color: #222;
+  font-size: 1rem;
+  font-family: $font-stack;
+}
+
+label {
+  color: #222;
+  font-size: 1rem;
+  font-family: $font-stack;
+}
+
 /* Main */
 html
 {
@@ -269,6 +301,7 @@ body
   font-family: $font-stack;
   font-weight: 300;
   line-height: 1.5;
+  font-size: 1rem;
 }
 
 header
@@ -343,7 +376,8 @@ nav
 
     & > p,
     & > h1,
-    & > .alpha
+    & > .alpha,
+    & > .wpcf7
     {
       @extend %max-width;
     }
