@@ -90,14 +90,14 @@ h6, .zeta { font-size: 1.125rem; }
 
 .omega, .hero .caption { font-size: 1rem; }
 
-input, select, textarea { width: 100%; padding: 0.5rem; color: #222; font-size: 1rem; font-family: "franklin-gothic-urw", Helvetica, Arial, sans-serif; }
+input, select, textarea { width: 100%; padding: 0.5rem; color: #222; font-size: 1rem; font-family: "usual", "Helvetica Neue", Arial, sans-serif; }
 
-label { color: #222; font-size: 1rem; font-family: "franklin-gothic-urw", Helvetica, Arial, sans-serif; }
+label { color: #222; font-size: 1rem; font-family: "usual", "Helvetica Neue", Arial, sans-serif; }
 
 /* Main */
 html { font-size: 16px; }
 
-body { color: #222; background: #f5f5f5; font-family: "franklin-gothic-urw", Helvetica, Arial, sans-serif; font-weight: 300; line-height: 1.5; font-size: 1rem; }
+body { color: #222; background: #f5f5f5; font-family: "usual", "Helvetica Neue", Arial, sans-serif; font-weight: 400; line-height: 1.675; font-size: 1rem; -webkit-font-smoothing: antialiased; }
 
 header { padding-top: 3rem; padding-bottom: 3rem; }
 @media screen and (max-width: 60rem) { header { padding-top: 2rem; padding-bottom: 2rem; } }

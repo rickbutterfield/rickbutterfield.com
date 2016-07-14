@@ -26,8 +26,8 @@
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
   <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
 
-  <script type="text/javascript" src="//use.typekit.net/nkm2qfg.js"></script>
-  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <script src="//use.typekit.net/mqm0gwp.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
   <?php wp_head(); ?>
 </head>
@@ -37,7 +37,7 @@
   <header>
     <div class="logo">
       <h1 class="name gamma">
-        <a href="/"><?php echo get_bloginfo( 'name' ); ?></a> <a class="btn btn-small btn-true no-margin-bottom" href="/quote">is accepting work!</a>
+        <a href="/"><?php echo get_bloginfo( 'name' ); ?></a> <a class="btn btn-small btn-true no-margin-bottom" href="/together">is accepting work!</a>
       </h1>
       <h2 class="tagline epsilon">
         <?php echo get_bloginfo( 'description' ); ?>
@@ -46,7 +46,7 @@
 
     <nav>
       <ul class="nav">
-        <?php wp_list_pages('title_li=&exclude=79'); ?>
+        <?php wp_list_pages('title_li='); ?>
       </ul>
     </nav>
   </header>
